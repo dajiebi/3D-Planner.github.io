@@ -23,7 +23,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base:'/',
+  base:'/3D-Planner.github.io',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
