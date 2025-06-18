@@ -33,7 +33,7 @@ export default {
     Table,
     SeletionForComparison,
     Comment,
-    Latex,
+    // Latex,
     Model3D,
     GaussianSplats3D
   }
@@ -42,20 +42,20 @@ export default {
 
 <template>
   <Title/>
-  <Carousel/>
   <Video/>
   <Abstract/>
+  <Carousel/>
   <Markdown/>
-  <Latex/>
+<!--  <Latex/>-->
   <Table/>
-  <Collapse/>
+<!--  <Collapse/>-->
   <Echart/>
-  <Model3D/>
-  <GaussianSplats3D/>
-  <SeletionForComparison/>
-  <ImageSliderInner/>
-  <ImageSlider/>
-  <ImageSelector/>
+<!--  <Model3D/>-->
+<!--  <GaussianSplats3D/>-->
+<!--  <SeletionForComparison/>-->
+<!--  <ImageSliderInner/>-->
+<!--  <ImageSlider/>-->
+<!--  <ImageSelector/>-->
   <BibTeX/>
-  <Comment/>
+<!--  <Comment/>-->
 </template>

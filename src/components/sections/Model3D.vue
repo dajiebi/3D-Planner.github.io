@@ -37,7 +37,7 @@ import { vue3dLoader } from "vue-3d-loader";
           </el-col>
           <el-col :xs="16" :sm="10" >
             <vue3dLoader
-              filePath="./model3d/ply/Lucy100k.ply"
+              filePath="./model3d/ply/s.ply"
               :cameraPosition="{ x: 100, y: 200, z: 3000 }"
               :scale="{ x: 1, y: 1, z: 1 }"
               :position="{ x: 100, y: 100, z: 100 }"
@@ -48,8 +48,8 @@ import { vue3dLoader } from "vue-3d-loader";
             ></vue3dLoader>
           </el-col>
         </el-row>
-        
-        
+
+
       </el-col>
     </el-row>
   </div>
