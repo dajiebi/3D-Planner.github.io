@@ -3,11 +3,11 @@ export default {
   data() {
     return {
       bibtex: [
-        "@article{junyaohu2023template,",
-        "    title={Academic Project Page Template Vue},",
-        "    author={Hu, Junyao},",
-        "    journal={GitHub},",
-        "    year={2023}",
+        "@article{Yunjie Shen,",
+        "    title={3D-Planner：Language-Guided 3D Representations for Robotic Manipulation with Language Models},",
+        "    author={Yunjie Shen},",
+        "    journal={XXX},",
+        "    year={2025}",
         "}",
       ],
     }

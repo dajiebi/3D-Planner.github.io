@@ -45,11 +45,11 @@ export default {
   <Video/>
   <Abstract/>
   <Carousel/>
+  <Table/>
   <Markdown/>
 <!--  <Latex/>-->
-  <Table/>
+<!--  <Echart/>-->
 <!--  <Collapse/>-->
-  <Echart/>
 <!--  <Model3D/>-->
 <!--  <GaussianSplats3D/>-->
 <!--  <SeletionForComparison/>-->
