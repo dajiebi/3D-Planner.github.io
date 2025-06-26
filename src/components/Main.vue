@@ -53,7 +53,7 @@ export default {
 <!--  <Model3D/>-->
 <!--  <GaussianSplats3D/>-->
 <!--  <SeletionForComparison/>-->
-<!--  <ImageSliderInner/>-->
+  <ImageSliderInner/>
 <!--  <ImageSlider/>-->
 <!--  <ImageSelector/>-->
   <BibTeX/>
