@@ -1,13 +1,13 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const NUM_INTERP_FRAMES = 10;
+const NUM_INTERP_FRAMES = 12;
 const inputImagePaths = [];
 const outputImagePaths = [];
-const inputImageRootPath = './image_slider/huaqiang/input/';
-const outputImageRootPath = './image_slider/huaqiang/output/';
+const inputImageRootPath = './image_slider/EGG/input/';
+const outputImageRootPath = './image_slider/EGG/output/';
 const minValue = 0;
-const maxValue = 9;
+const maxValue = 11;
 let inputImagePath = ref("");
 let outputImagePath = ref("");
 let sliderValue = ref(0);
@@ -60,12 +60,34 @@ const handleChange = (value) => {
     <el-divider />
 
     <el-row justify="center">
-      <h1 class="section-title">Qualitative Results</h1>
+      <h1 class="section-title">Long Horizon Tasks Results</h1>
     </el-row>
-
     <el-row justify="center">
       <el-col>
         <el-row justify="center" :gutter="20">
+          <el-col :xs="12" :sm="10" :md="8" :lg="6" :xl="6" >
+            <div class="demo-image">
+              <div class="block">
+                <!-- 预加载骨架 -->
+                <el-skeleton
+                style="width: 100%"
+                :loading="isLoading"
+                animated
+                :throttle="1000">
+                  <!-- 骨架模板 -->
+                  <template #template>
+                    <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
+                  </template>
+                  <!-- 实际显示图像内容 -->
+                  <template #default>
+                    <img :src="outputImagePath" style="width: 60%; object-fit: contain;">
+                  </template>
+                </el-skeleton>
+                <!-- 图片路径 -->
+                <span class="demonstration">output: {{ outputImagePath }}</span>
+              </div>
+            </div>
+          </el-col>
           <el-col :xs="12" :sm="10" :md="8" :lg="6" :xl="6" >
             <div class="demo-image">
               <div class="block">
@@ -90,29 +112,7 @@ const handleChange = (value) => {
             </div>
           </el-col>
 
-          <el-col :xs="12" :sm="10" :md="8" :lg="6" :xl="6" >
-            <div class="demo-image">
-              <div class="block">
-                <!-- 预加载骨架 -->
-                <el-skeleton
-                style="width: 100%"
-                :loading="isLoading"
-                animated
-                :throttle="1000">
-                  <!-- 骨架模板 -->
-                  <template #template>
-                    <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
-                  </template>
-                  <!-- 实际显示图像内容 -->
-                  <template #default>
-                    <img :src="outputImagePath" style="width: 100%; object-fit: contain;">
-                  </template>
-                </el-skeleton>
-                <!-- 图片路径 -->
-                <span class="demonstration">output: {{ outputImagePath }}</span>
-              </div>
-            </div>
-          </el-col>
+
         </el-row>
       </el-col>
     </el-row>
