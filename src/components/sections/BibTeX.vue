@@ -3,7 +3,7 @@ export default {
   data() {
     return {
       bibtex: [
-        "@article{Yunjie Shen,",
+        "@article{Xinyi Yu,",
         "    title={3D-Planner：Language-Guided 3D Representations for Robotic Manipulation with Language Models},",
         "    author={Yunjie Shen},",
         "    journal={XXX},",

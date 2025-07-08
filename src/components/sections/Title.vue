@@ -25,13 +25,13 @@ const btn_color = '#444444'
 const authors = [
   {
     name: "Xinyi Yu",
-    icon: "",
+    icon: "./icon/yu.png",
     homepage: "",
     address_flag: "1,#"
   },
   {
     name: "Jintao Rong",
-    icon: "",
+    icon: "./icon/rong.jpg",
     homepage: "",
     address_flag: "1,#"
   },
@@ -42,8 +42,14 @@ const authors = [
     address_flag: "2"
   },
   {
+    name: "Wangcai Zheng",
+    icon: "./icon/zheng.png",
+    homepage: "",
+    address_flag: "2"
+  },
+  {
     name: "Linlin Ou",
-    icon: "",
+    icon: "./icon/ou.png",
     homepage: "",
     address_flag: "1,*"
   },
